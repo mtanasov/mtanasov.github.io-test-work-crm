@@ -1,0 +1,182 @@
+@import "fonts";
+@import "styles";
+
+.header {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   width: 306px;
+   height: 1198px;
+   left: 0px;
+   top: 0px;
+   background: #FFFFFF;
+   box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+
+   .header__title>* {
+      position: absolute;
+
+   }
+
+   .header__title {
+      width: 210.55px;
+      display: flex;
+      flex-direction: row;
+
+      .header__icon {
+         position: absolute;
+         width: 37px;
+         height: 37px;
+         left: 28px;
+         top: 37px;
+
+
+      }
+
+      .header__subtitle {
+         // position: absolute;
+         width: 150px;
+         height: 39px;
+         left: 73px;
+         top: 36px;
+         font-family: @font_Poppins_600;
+         font-weight: 600;
+         font-size: 26px;
+         line-height: 39px;
+         letter-spacing: 0.01em;
+      }
+
+      .header__version {
+         // position: absolute;
+         width: 18px;
+         height: 15px;
+         left: 227px;
+         top: 54px;
+         font-family: @font_Poppins_Medium;
+         font-size: 10px;
+         line-height: 15px;
+         letter-spacing: -0.01em;
+         color: #838383;
+      }
+   }
+}
+
+.nav {
+   padding: 64px 0 0 0;
+   top: 64px;
+   left: 39px;
+}
+
+
+a {
+   text-decoration: none;
+   color: #9197B3;
+}
+
+a:hover {
+
+   color: #FFFFFF;
+}
+
+a::after {
+   content: ">";
+   // position: absolute;
+   // right: 42px;
+   position: absolute;
+   // left: 37.5%;
+   right: 14px;
+   // top: 25%;
+   // bottom: 25%;
+
+   // border: 2px solid #FFFFFF;
+}
+
+.header__nav>* {
+   display: flex;
+   flex-direction: row;
+   // width: 231px;
+   // height: 38.5px;
+   font-family: @font_Poppins_Medium;
+   font-size: 14px;
+   // line-height: 21px;
+   letter-spacing: -0.01em;
+   border-radius: 8px;
+   padding: 11px 14px;
+}
+
+.header__nav>*:hover {
+   background-color: #5932EA;
+}
+
+svg:hover path a {
+   stroke: #FFFFFF;
+   // fill: #FFFFFF;
+}
+
+.header__nav {
+   display: flex;
+   width: 231px;
+   height: 376px;
+   flex-direction: column;
+   gap: 20px;
+   position: relative;
+
+   .header__nav__dashboard:hover>.nav__icon>a,
+   .header__nav__dashboard:hover>.nav__icon>svg>path,
+   .header__nav__product:hover>.nav__icon>a,
+   .header__nav__product:hover>.nav__icon>svg>path,
+   .header__nav__customers:hover>.nav__icon>a,
+   .header__nav__customers:hover>.nav__icon>svg>path,
+   .header__nav__income:hover>.nav__icon>a,
+   .header__nav__income:hover>.nav__icon>svg>path,
+   .header__nav__promote:hover>.nav__icon>a,
+   .header__nav__promote:hover>.nav__icon>svg>path,
+   .header__nav__help:hover>.nav__icon>a,
+   .header__nav__help:hover>.nav__icon>svg>path {
+      .mixin_nav_menu()
+   }
+
+   .header__nav__dashboard {}
+
+   .header__nav__product {}
+
+   .header__nav__customers {}
+
+   .header__nav__income {}
+
+   .header__nav__promote {}
+
+   .header__nav__help {}
+}
+
+.nav__icon {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 16px;
+}
+
+.header__user {
+   position: absolute;
+   bottom: 76px;
+   left: 28px;
+   display: flex;
+   flex-direction: row;
+   gap: 12px;
+
+   .header__user__photo {}
+
+   .header__user__groupe {
+      display: flex;
+      flex-direction: column;
+
+      .header__user__name {
+         font-family: @font_Poppins_Medium;
+         font-size: 14px;
+      }
+
+      .header__user__job {
+         font-family: @font_Poppins_light;
+         font-size: 12px;
+      }
+   }
+}
