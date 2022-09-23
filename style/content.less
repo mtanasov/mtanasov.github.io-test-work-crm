@@ -1,0 +1,352 @@
+@import "fonts";
+@import "styles";
+
+.content {
+   // display: flex;
+   width: 1134px;
+   height: 1198px;
+   // background-color: rgb(113, 206, 206);
+   // flex-direction: column;
+}
+
+;
+
+.content__greetings {
+   display: inline-block;
+   width: 184px;
+   height: 36px;
+   position: relative;
+   left: 71px;
+   top: 41px;
+   margin: 0;
+   padding: 0;
+   font-family: @font_Poppins_Medium;
+   font-weight: 400;
+}
+
+.content__customers {
+   width: 968px;
+   height: 812px;
+   background-color: #FFFFFF;
+   position: relative;
+   top: 96px;
+   left: 71px;
+   border-radius: 30px;
+
+   // position: absolute;
+   // width: 968px;
+   // height: 812px;
+   // left: 377px;
+   // top: 128px;
+
+   // background: #FFFFFF;
+   // box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+   // border-radius: 30px;
+
+   .content__header {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100px;
+      // background-color: rgb(75, 94, 94);
+      border-radius: 30px 30px 0 0;
+      text-align: center;
+
+      .content__customers__header__left {
+         width: 50%;
+         // background-color: coral;
+      }
+
+      .content__customers__header__right {
+         width: 50%;
+         // background-color: green;
+         position: relative;
+
+         .content__customers__header__right__icon {
+            display: inline-block;
+            height: 38px;
+            position: absolute;
+            top: 53px;
+            left: 224px;
+            z-index: 2;
+         }
+
+         .content__customers__header__input::placeholder {
+            position: relative;
+            top: 0;
+            left: 38px;
+            color:
+               #B5B7C0;
+
+         }
+
+         .content__customers__header__input {
+            width: 216px;
+            height: 38px;
+            position: absolute;
+            top: 44px;
+            right: 53px;
+            margin: 0;
+            padding: 0;
+            border-radius: 10px;
+            background-color: #F9FBFF;
+            font-family: @font_Poppins_light;
+            font-size: 12px;
+            border: none;
+
+         }
+      }
+
+
+      .content__customers__title {
+         width: 169px;
+         font-size: 24px;
+         font-family: @font_Poppins_Medium;
+         font-weight: 600;
+         position: relative;
+         left: 38px;
+         top: 30px;
+         margin: 0;
+         padding: 0;
+      }
+
+      .content__customers__subtitle {
+         position: absolute;
+         top: 70px;
+         left: 38px;
+         height: 21px;
+         font-family: @font_Poppins_Regular;
+         font-size: 14px;
+         color: #16C098;
+      }
+   }
+
+   .content__customers__table {
+      width: 968px;
+      height: 618px;
+      // background-color: rgb(64, 64, 64);
+      display: flex;
+      justify-content: center;
+
+      .table__name {}
+
+      .table__company {}
+
+      .table__phone {}
+
+      .table__email {}
+
+      .table__country {}
+
+      .table__status {
+         .table__status_chek {
+            display: none;
+         }
+
+         // .table__status_btn {
+         //    width: 50px;
+         //    height: 30px;
+         //    background-color: rgb(106, 168, 43);
+         // }
+
+         #status+.label .table__status_btn {
+            width: 80px;
+            height: 29px;
+            background-color: #FFC5C5;
+            border: 1px solid #DF0404;
+            border-radius: 4px;
+         }
+
+         #status+.label .table__status_btn::before {
+            content: "Inactive";
+            text-align: center;
+            position: relative;
+            top: 4px;
+            font-size: 14px;
+            color: #DF0404;
+            left: 12px;
+         }
+
+         #status:checked+.label .table__status_btn {
+            background-color: rgba(22, 192, 152, 0.38);
+            border: 1px solid #00B087;
+         }
+
+         #status:checked+.label .table__status_btn::before {
+            content: "Active";
+            color: #00B087;
+            left: 18px;
+         }
+      }
+
+
+      .content__customers__content__table__headlines::after {
+         content: "";
+         width: 968px;
+         height: 1px;
+         background-color: #EEEEEE;
+         position: absolute;
+         top: 32px;
+         left: -37px;
+      }
+
+      .content__customers__content__table__headlines {
+         display: flex;
+         width: 863px;
+         height: 21px;
+         // background-color: #05120f;
+         position: absolute;
+         top: 131px;
+         left: 37px;
+         font-weight: 500;
+         justify-content: space-between;
+         font-family: @font_Poppins_Medium;
+         color: #B5B7C0;
+         font-size: 14px;
+      }
+
+      .groupe {
+         display: flex;
+         width: inherit;
+         height: inherit;
+         flex-direction: column;
+         position: absolute;
+         top: 186px;
+         gap: 44px;
+         left: 37px;
+      }
+
+      // .content__customers__content__table__rows::after {
+      //    content: "";
+      //    width: 968px;
+      //    height: 1px;
+      //    background-color: #EEEEEE;
+      //    position: absolute;
+      //    top: 50px;
+      //    left: -37px;
+      // }
+
+      .content__customers__content__table__rows {
+         height: 29px;
+         width: 886px;
+         // background-color: green;
+         // position: absolute;
+         // top: 186px;
+         left: 37px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         font-family: @font_Poppins_Medium;
+         font-weight: 500;
+         font-size: 14px;
+         align-items: center;
+         gap: 44px;
+      }
+
+      .customer::after {
+         content: "";
+         width: 888px;
+         height: 1px;
+         background-color: #EEEEEE;
+         position: absolute;
+         margin-top: 72px;
+         left: 0px;
+      }
+
+      // .customer1 {
+      //    top: 186px;
+      // }
+
+      // .customer2 {
+      //    top: 234px;
+      // }
+   }
+
+   .content__customers__footer {
+      display: flex;
+      width: 100%;
+      height: 94px;
+      // background-color: rgb(75, 94, 94);
+      position: absolute;
+      bottom: 0;
+      border-radius: 0 0 30px 30px;
+      // border-top: 2px solid;
+
+      .content__customer__footer__left {
+         display: inline-block;
+         width: 50%;
+         height: 100%;
+         // background-color: #5e71c5;
+         font-size: 14px;
+         font-family: @font_Poppins_Medium;
+         font-weight: 500;
+         color: #B5B7C0;
+
+         .content__customer__footer__left__text {
+            position: absolute;
+            bottom: 41px;
+            left: 38px;
+         }
+      }
+
+      .content__customer__footer__right>*:hover {
+         background-color: #5932EA;
+         color: white;
+      }
+
+      .content__customer__footer__right>* {
+         width: 24px;
+         height: 20px;
+         background-color: #F5F5F5;
+         border: 1px solid #eee;
+         border-radius: 4px;
+         font-family: @font_Poppins_Medium;
+         font-weight: 500;
+         font-size: 12px;
+         padding-top: 2px;
+         color: #404B52;
+         text-align: center;
+      }
+
+      .special {
+         background-color: #16C098;
+         width: 7px;
+         height: 0;
+         background-color: none;
+         border: none;
+         border-radius: 0px;
+         font-family: @font_Poppins_Medium;
+         font-weight: 500;
+         font-size: 12px;
+         padding-top: 0px;
+      }
+
+      .content__customer__footer__right {
+         display: flex;
+         width: 50%;
+         height: 100%;
+         // background-color: #2f46af;
+         flex-direction: row;
+         align-items: center;
+         gap: 12px;
+         justify-content: flex-end;
+         position: relative;
+
+         .special {
+            // width: 26px;
+            // height: 24px;
+            // background-color: #F5F5F5;
+            // border: 1px solid #eee;
+            // border-radius: 4px;
+            font-family: @font_Poppins_Medium;
+            font-weight: 500;
+            font-size: 12px;
+         }
+
+      }
+
+      .buttons {
+         padding-right: 40px;
+      }
+   }
+}
